@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Boletim - Marcos Vínicius Santos da Rocha</title>
+  <style>
+    :root{
+      --blue:#0b66b3;
+      --light-blue:#1e90d6;
+      --gray:#e9e9e9;
+      --muted:#888;
+      --panel-bg:#f6f6f6;
+      --card-border:#d0d0d0;
+      --accent:#3ba0ff;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    }
+    body{margin:0;background:#fafbfd;color:#222}
+
+    .top-banner{
+      background: linear-gradient(90deg,var(--blue),var(--light-blue));
+      color:white;
+      padding:12px 18px;
+      display:flex;
+      align-items:center;
+      gap:16px;
+    }
+    .logo{
+      width:64px;height:64px;border-radius:50%;
+      display:flex;align-items:center;justify-content:center;
+      background:white;
+      padding:4px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.15);
+    }
+    .title{
+      font-size:20px; font-weight:700; letter-spacing:0.3px;
+    }
+    .welcome{
+      margin-left:auto;font-size:13px;background:rgba(255,255,255,0.08);padding:6px 10px;border-radius:6px;
+    }
+
+    .container{display:flex;gap:18px;padding:18px;max-width:1150px;margin:18px auto}
+    .sidebar{
+      width:220px;background:var(--panel-bg);border-radius:8px;padding:12px;border:1px solid var(--card-border);
+      box-shadow:0 1px 4px rgba(0,0,0,0.04);
+    }
+    .sidebar h4{color:var(--blue);font-size:14px;margin:6px 0 10px}
+    .sidebar a{display:block;color:#333;padding:8px;border-radius:6px;text-decoration:none;margin:4px 0;font-size:14px}
+    .sidebar a:hover{background:#fff}
+
+    .content{
+      flex:1;background:white;border-radius:8px;padding:14px;border:1px solid var(--card-border);
+      box-shadow:0 2px 8px rgba(0,0,0,0.03);
+    }
+    .breadcrumb{font-size:13px;color:var(--muted);margin-bottom:8px}
+    .panel{background:var(--panel-bg);padding:10px;border-radius:6px;margin-bottom:12px;border:1px solid #ececec}
+    .panel strong{color:var(--blue)}
+
+    table{width:100%;border-collapse:collapse;background:white}
+    th, td{padding:8px 10px;border-bottom:1px solid #eee;text-align:left;font-size:13px}
+    thead th{background:#f3f7fb;color:#222;border-bottom:2px solid #e0e6ef}
+    .col-center{text-align:center}
+    .note{font-size:12px;color:var(--muted);margin-top:10px}
+
+    @media (max-width:760px){
+      .container{flex-direction:column;padding:12px}
+      .sidebar{width:100%}
+    }
+  </style>
+</head>
+<body>
+  <header class="top-banner" role="banner">
+    <div class="logo">
+      <img src="https://reges.com.br/assets/images/logo_reges.png" 
+      alt="Logo REGES" style="width:64px;height:64px;object-fit:contain;">
+    </div>
+    <div class="title">REGES - ALUNOS</div>
+    <div class="welcome">Marcos, boa noite!!</div>
+  </header>
+
+  <main class="container" role="main">
+    <aside class="sidebar" aria-label="Menu lateral">
+      <h4>MEUS RECURSOS</h4>
+      <a href="#">Alterar Senha</a>
+      <a href="#">Arquivos</a>
+      <a href="#">Sair</a>
+
+      <h4 style="margin-top:12px">ACADÊMICO</h4>
+      <a href="#">Rematrícula</a>
+      <a href="#">Notas e Faltas</a>
+      <a href="#">Avaliação Institucional</a>
+      <a href="#">Moodle</a>
+      <a href="#">Formulários</a>
+
+      <h4 style="margin-top:12px">FINANCEIRO</h4>
+      <a href="#">2ª Via de Boletos</a>
+    </aside>
+
+    <section class="content" aria-label="Conteúdo principal">
+      <div class="breadcrumb"><span style="color:green;font-weight:700">ACADÊMICO:</span> BOLETIM</div>
+
+      <div class="panel">
+        <div>ALUNO: <strong>Marcos Vínicius Santos da Rocha</strong></div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Disciplina</th>
+            <th class="col-center">1º Bi</th>
+            <th class="col-center">2º Bi</th>
+            <th class="col-center">Exame</th>
+            <th class="col-center">Sub</th>
+            <th class="col-center">Faltas</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Sistemas Móveis I</td><td class="col-center">9.00</td><td class="col-center">0.00</td><td class="col-center">0.00</td><td class="col-center">0.00</td><td class="col-center">2</td></tr>
+          <tr><td>Sistemas Web III</td><td class="col-center">7.50</td><td class="col-center">0.00</td><td class="col-center">0.00</td><td class="col-center">0.00</td><td class="col-center">6</td></tr>
+          <tr><td>Linguagem de Programação IV</td><td class="col-center">8.00</td><td class="col-center">0.00</td><td class="col-center">0.00</td><td class="col-center">0.00</td><td class="col-center">2</td></tr>
+          <tr><td>Computação em Nuvem I</td><td class="col-center">7.00</td><td class="col-center">0.00</td><td class="col-center">0.00</td><td class="col-center">0.00</td><td class="col-center">0</td></tr>
+          <tr><td>Internet, Protocolos, Segurança da Informação III</td><td class="col-center">10.00</td><td class="col-center">0.00</td><td class="col-center">0.00</td><td class="col-center">0.00</td><td class="col-center">1</td></tr>
+          <tr><td>Projeto Interdisciplinar V</td><td class="col-center">10.00</td><td class="col-center">0.00</td><td class="col-center">0.00</td><td class="col-center">0.00</td><td class="col-center">4</td></tr>
+        </tbody>
+      </table>
+
+    
+    </section>
+  </main>
+</body>
+</html>
